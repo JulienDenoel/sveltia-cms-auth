@@ -1,3 +1,12 @@
 name = "sveltia-cms-auth"
 main = "src/index.js"
 compatibility_date = "2023-03-24"
+
+# Réglages sans secret, mis directement ici : contrairement aux réglages
+# ajoutés à la main dans Variables and Secrets sur le tableau de bord
+# Cloudflare, ceux-ci sont livrés avec chaque déploiement du dépôt, donc
+# fiables. GITHUB_CLIENT_SECRET reste dans Variables and Secrets (type
+# Secret), jamais ici, jamais dans le dépôt.
+[vars]
+ALLOWED_DOMAINS = "grandrectangle.be"
+GITHUB_CLIENT_ID = "Ov23liCEer5akTTPjhzn"
